@@ -1,0 +1,231 @@
+html,
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+body a {
+  font-family: "Cabin", sans-serif;
+}
+
+.home {
+  background-color: #6a67ce;
+  padding-top: 10%;
+  height: 100vh;
+}
+@media (max-width: 766px) {
+  .home {
+    background-color: #6a67ce;
+    padding-top: 10%;
+    height: 100vh;
+  }
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+div.collapse {
+  padding-right: 10px;
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* banner section */
+
+.banner h1 {
+  color: #fff;
+  font-size: 3em;
+  text-transform: capitalize;
+  line-height: 65px;
+  letter-spacing: 1px;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 16px;
+  margin: 2em 0;
+}
+
+.banner a {
+  background: #6a67ce !important;
+  color: #fff !important;
+  border: 1px solid #fff;
+}
+@media (max-width: 766px) {
+  .banner h1 {
+    color: #fff;
+    font-size: 2em;
+    text-transform: capitalize;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
+  .banner p {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .banner a {
+    background: #6a67ce !important;
+    color: #fff !important;
+    border: 1px solid #fff;
+  }
+}
+/* about section */
+
+.heading {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.about-text h3 {
+  font-weight: 600;
+}
+
+.about-text p {
+  font-weight: 600;
+  color: #777;
+  font-size: 16px;
+}
+@media(max-width:766px){
+  .about{
+    margin-top: 5% !important;
+  }
+}
+
+/* why choose us */
+
+.choose,
+.agency {
+  background: #f8f9fa;
+}
+
+.f1 {
+  box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, 0.1);
+  background: #fff;
+}
+
+.f1 h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.f1 p {
+  font-size: 16px;
+  color: #777;
+}
+
+.f1 span.fa {
+  text-align: center;
+  background: #f3f3f3;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+}
+
+.icon1 span.fa {
+  color: #ff4f81;
+  font-size: 30px;
+  line-height: 65px;
+}
+
+.icon2 span.fa {
+  color: #00aeff;
+  font-size: 30px;
+  line-height: 65px;
+}
+
+.icon3 span.fa {
+  color: #2dde98;
+  font-size: 30px;
+  line-height: 65px;
+}
+
+.icon4 span.fa {
+  color: #fe5000;
+  font-size: 30px;
+  line-height: 65px;
+}
+
+/* marketing */
+
+.process p {
+  font-size: 16px;
+  color: #777;
+}
+
+h4.feed-title {
+  font-size: 25px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* agency */
+
+h3.agency-title {
+  font-size: 3.3em;
+  font-weight: 600;
+  color: #333;
+}
+
+.agency-right p {
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.partners {
+  background-color: #b84592 !important;
+}
+
+.partners-icon {
+  color: #fff !important;
+  font-size: 50px;
+}
+
+.border-right {
+  padding-right: 50px !important;
+}
+
+/* footer */
+
+.footer {
+  background-color: #212020;
+}
+
+.footer p {
+  color: rgba(225, 225, 225, 0.404);
+}
+
+.footer b {
+  color: rgba(255, 255, 255, 0.562);
+}
+
+.footer i {
+  font-size: 13px;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.562) !important;
+}
+
+hr {
+  background-color: rgba(255, 255, 255, 0.404) !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}

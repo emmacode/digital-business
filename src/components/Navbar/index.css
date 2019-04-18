@@ -1,0 +1,14 @@
+.bg-dark {
+    background: #6a67ce !important;
+}
+
+.navbar {
+    box-shadow: none !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 16px !important;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+}
