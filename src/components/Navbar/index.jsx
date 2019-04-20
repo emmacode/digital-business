@@ -18,7 +18,7 @@ class Navbar extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-icon" />
+            <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="adosResponsive">
             <ul className="navbar-nav smooth-scroll ml-auto">

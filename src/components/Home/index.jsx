@@ -18,9 +18,36 @@ class Home extends Component {
     return (
       <React.Fragment>
         <section className="home">
-          <div className="container">
+          <div className="banner">
+            <div className="container">
+              <div className="row banner-text">
+                <div className="slider-info col-md-4 col-lg-6">
+                  <div className="banner-info-grid mt-5">
+                    <h2>Welcome To Digital Marketing Agency </h2>
+                    <p>
+                      Integer pulvinar leo id viverra feugiat. Pellentesque
+                      libero justo, semper at tempus vel, ultrices in ligula.
+                      Nulla ut sollicitudin velit. Sed porttitor orci vel
+                      fermentum maximus. Curabitur ut turpis massa.
+                    </p>
+                  </div>
+                  <a className="btn mr-2 text-center" href="#popup1">
+                    Read More{" "}
+                  </a>
+                  <a className="btn text-center" href="#popup2">
+                    Watch Video{" "}
+                  </a>
+                </div>
+                <div className="col-lg-6 col-md-8 mt-lg-0 mt-sm-5 mt-3 banner-image text-center">
+                  <img src={banner} alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className=" col-md-6 col-lg-6 col-sm-12">
                 <div className="banner mt-5">
                   <h1>Welcome to Digital Marketing Agency</h1>
                   <p>
@@ -39,11 +66,11 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 ">
+              <div className=" col-md-6 col-lg-6 col-sm-12">
                 <img src={banner} className="img-fluid" alt="" />
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
         {/* about us */}
 
@@ -51,7 +78,7 @@ class Home extends Component {
           <div className="container pt-lg-5 pt-sm-3">
             <div className="row">
               <div className="col-sm-4 col-md-3 col-lg-3">
-                <h3 className="heading">About Us</h3>
+                <h3 className="heading text-center">About Us</h3>
               </div>
               <div className="col-sm-4 col-md-6 col-lg-6 about-text">
                 <h3>Welcome To Our Digital Marketing Agency Website</h3>
@@ -81,9 +108,8 @@ class Home extends Component {
             <div className="row">
               <div className="col-lg-3">
                 <div className="f1 icon1 p-4">
-                  <div className="icon">
-                    <span className="fas fa-bandcamp" />
-                  </div>
+                  <div className="icon" />
+                  <i className="fab fa-bandcamp" />
                   <h3 className="my-3">Branding</h3>
                   <p>
                     Excepteur sint occaecat non proident, sunt in culpa quis.
@@ -94,7 +120,7 @@ class Home extends Component {
               <div className="col-lg-3">
                 <div className="f1 icon2 p-4">
                   <div className="icon">
-                    <span className="fas fa-codepen" />
+                    <i className="fab fa-codepen" />
                   </div>
                   <h3 className="my-3">Marketing</h3>
                   <p>
@@ -106,7 +132,7 @@ class Home extends Component {
               <div className="col-lg-3">
                 <div className="f1 icon3 p-4">
                   <div className="icon">
-                    <span className="fas fa-btc" />
+                    <i class="fab fa-btc" />
                   </div>
                   <h3 className="my-3">Advertising</h3>
                   <p>
@@ -118,7 +144,7 @@ class Home extends Component {
               <div className="col-lg-3">
                 <div className="f1 icon4 p-4">
                   <div className="icon">
-                    <span className="fas fa-cloud red-text" />
+                    <span className="fas fa-cloud" />
                   </div>
                   <h3 className="my-3">Product Sales</h3>
                   <p>
@@ -201,34 +227,32 @@ class Home extends Component {
             </div>
           </div>
         </section>
-        <section className="portfolio pt-5">
-          <div className="container">
-            <h3 className="heading">Our Portfolio</h3>
-            <div className="row pt-5">
-              <div className="col-md-3">
+        <section className="portfolio py-5">
+          <div className="container py-3">
+            <h3 className="heading mb-4">Our Portfolio</h3>
+            <div className="row text-center">
+              <div className="col-md-3 col-6 gal-img">
                 <img src={g1} className="img-fluid" alt="" />
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 col-6 gal-img">
                 <img src={g2} className="img-fluid" alt="" />
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 col-6 gal-img">
                 <img src={g3} className="img-fluid" alt="" />
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 col-6 gal-img">
                 <img src={g4} className="img-fluid" alt="" />
               </div>
-            </div>
-            <div className="row pt-3">
-              <div className="col-md-3">
+              <div className="col-md-3 col-6 gal-img">
                 <img src={g5} className="img-fluid" alt="" />
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 col-6 gal-img">
                 <img src={g6} className="img-fluid" alt="" />
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 col-6 gal-img">
                 <img src={g7} className="img-fluid" alt="" />
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 col-6 gal-img">
                 <img src={g8} className="img-fluid" alt="" />
               </div>
             </div>
@@ -239,29 +263,31 @@ class Home extends Component {
             <h3 className="heading white-text pt-3 mb-5">
               Our Marketing Partners
             </h3>
-            <div className="row ml-5">
-              <div className="col-md-2 ">
-                <i class="partners-icon fab fa-codepen border-right" />
-              </div>
-              <div className="col-md-2 ">
-                <i class="partners-icon fab fa-lastfm border-right" />
-              </div>
-              <div className="col-md-2 ">
-                <i class="partners-icon fab fa-codiepie border-right" />
-              </div>
-              <div className="col-md-2 ">
-                <i class="partners-icon fab fa-drupal border-right" />
-              </div>
-              <div className="col-md-2 ">
-                <i class="partners-icon fab fa-dashcube border-right" />
-              </div>
-              <div className="col-md-2 ">
-                <i class="partners-icon fab fa-skyatlas" />
-              </div>
+            <div className="text-center">
+              <ul className="row list-unstyled partners-icon">
+                <li className=" col-4 col-lg-2">
+                  <i className="fab fa-codepen" aria-hidden="true" />
+                </li>
+                <li className=" col-4 col-lg-2 border-left border-right">
+                  <i className="fab fa-lastfm" aria-hidden="true" />
+                </li>
+                <li className=" col-4 col-lg-2 border-right">
+                  <i className="fab fa-codiepie" aria-hidden="true" />
+                </li>
+                <li className=" col-4 col-lg-2 border-right mt-md-0 mt-3">
+                  <i className="fab fa-drupal" aria-hidden="true" />
+                </li>
+                <li className=" col-4 col-lg-2 border-right mt-md-0 mt-3">
+                  <i className="fab fa-dashcube" aria-hidden="true" />
+                </li>
+                <li className=" col-4 col-lg-2 mt-md-0 mt-3">
+                  <i className="fab fa-skyatlas" aria-hidden="true" />
+                </li>
+              </ul>
             </div>
           </div>
         </section>
-        <section className="footer">
+        <footer className="footer">
           <div className="container pt-5 pb-5">
             <div className="row">
               <div className="col-lg-4">
@@ -282,13 +308,13 @@ class Home extends Component {
                 </h5>
                 <p>
                   {" "}
-                  <i class="fab fa-twitter white-text" />
+                  <i class="fab fa-twitter white-text pr-2" />
                   <b> Sed ut piciatis unde natus</b> <br /> Sed ut perspiciatis
                   unde omnis iste natus error sit volupta.... <br />
                   <i>23 Nov 2018.</i>
                 </p>
                 <p>
-                  <i class="fab fa-twitter white-text" />
+                  <i class="fab fa-twitter white-text pr-2" />
                   <b> Modi tempra incunt sit</b> <br />
                   Sed ut perspiciatis unde omnis iste natus error sit
                   volupta.... <br />
@@ -341,15 +367,13 @@ class Home extends Component {
                 </ul>
               </div>
             </div>
-            <hr />
-            <div className="row">
-              <div className="col-12 center white-text">
-                <b> © 2019 Digital. All Rights Reserved | Design by </b>{" "}
-                W3layouts
-              </div>
-            </div>
           </div>
-        </section>
+        </footer>
+        <div className="copy-right border-top py-4 text-center">
+          <p>
+            &copy; 2019 Digital. All Rights Reserved | Design by <b>Moyin</b>
+          </p>
+        </div>
       </React.Fragment>
     );
   }
